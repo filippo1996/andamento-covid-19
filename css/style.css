@@ -42,8 +42,32 @@
     color: #7B6FFE;
 }
 
+.update-date__sub-title{
+    color: #b3b4ba;
+    font-weight: 400;
+    margin-right: 10px;
+}
 
+.content-report{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+.content-report__col{
+    width: 560px;
+}
+
+.content-report__content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content-report__card{
+    width: 265px;
+}
 
 
 
@@ -54,4 +78,23 @@
 
 .debug .header__col-nav{
     background:brown;
+}
+
+.debug .content-report{
+    background: tomato;
+}
+
+.debug .content-report__col{
+    background: yellow;
+    height: 500px;
+}
+
+.debug .content-report__card{
+    background-color: teal;
+    height: 100px;
+}
+
+.debug .content-report__content{
+    background-color:sienna;
+    height: calc(100% / 2);
 }
