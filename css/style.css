@@ -1,0 +1,57 @@
+.header{
+    height: 80px;
+    background-color: #2F3546;
+}
+
+.header__col-logo{
+    width: 20%;
+    height: 100%;
+    line-height: 80px;
+}
+
+.header__col-nav{
+    width: 80%;
+    height: 100%;
+}
+
+.header__logo-img{
+    vertical-align: middle;
+    margin-right: 15px;
+    width: 40px;
+}
+
+.header__text-logo{
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+    vertical-align: middle;
+}
+
+.header__nav{
+    line-height: 80px;
+    text-align: right;
+    padding: 0 40px;
+}
+
+.header__list{
+    margin: 0 20px;
+}
+
+.header__list--active,
+.header__list--active a{
+    color: #7B6FFE;
+}
+
+
+
+
+
+
+/* debug */
+.debug .header__col-logo{
+    background: blanchedalmond;
+}
+
+.debug .header__col-nav{
+    background:brown;
+}

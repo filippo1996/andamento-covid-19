@@ -1,3 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: black;
+    background-color: #292E3E;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    color: white;
+}
+
+li{
+    display: inline-block;
+    font-weight: 700;
+}
+
+li:hover a{
+    color: #7B6FFE;
+}
+
+i{
+    margin-right: 15px;
 }
