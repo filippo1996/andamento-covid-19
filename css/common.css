@@ -24,6 +24,17 @@ a{
     color: white;
 }
 
+h2{
+    color: white;
+}
+
+h5{
+    color: #AEAED5;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
 ul{
     list-style: none;
     color: white;
@@ -48,4 +59,34 @@ main{
 
 strong{
     color: #7B6FFE;
+}
+
+.ico-report{
+    margin: 0;
+    font-size: 20px;
+    color: white;
+}
+
+.blue{
+    background: linear-gradient(to right, #3398fb 0%, #8553ee 100%);
+}
+
+.orange-grad{
+    background: linear-gradient(87deg, #f5365c 0, #f56036 100%); 
+}
+
+.green-grad{
+    background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+}
+
+.yellow-grad{
+    background: linear-gradient(to right, #ffbf31 0%, #ff890e 100%);
+}
+
+.red-grad{
+    background: linear-gradient(87deg, #942c14 0, #e60c0c 100%); 
+}
+
+.viol-grad{
+    background: linear-gradient(135deg, #9a56ff 0%, #e36cd9 100%);
 }

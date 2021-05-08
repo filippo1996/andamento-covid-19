@@ -67,6 +67,28 @@
 
 .content-report__card{
     width: 265px;
+    margin-bottom: 20px;
+}
+
+.content-report__widget{
+    background: #2f3447;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.content-report__icon-gradient{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.content-report__value{
+    display: inline-block;
+    vertical-align: middle;
 }
 
 
