@@ -1,7 +1,6 @@
 var urlApi = 'https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-json/dpc-covid19-ita-andamento-nazionale.json';
 var items = [];
-//const elements = ['data','stato','dimessi_guariti','totale_positivi','ricoverati_con_sintomi','deceduti','tamponi','nuovi_positivi','totale_positivi_test_molecolare','isolamento_domiciliare'];
-const elements = ['dimessi_guariti','totale_positivi','ricoverati_con_sintomi','deceduti','tamponi','nuovi_positivi','totale_positivi_test_molecolare','isolamento_domiciliare'];
+const elements = ['data','stato','dimessi_guariti','totale_positivi','ricoverati_con_sintomi','deceduti','tamponi','nuovi_positivi','totale_positivi_test_molecolare','isolamento_domiciliare'];
 const daysAgo = 1;
 
 //Invochiamo la classe Ajax
@@ -45,21 +44,24 @@ function documentEle(elements, present, last){
     let calc;
     for(const element of elements){
         let ele = document.querySelector('#' + element);
-        let eleLast = document.querySelector('#' + element + '_last');
         if(element === 'stato' && present[element] === 'ITA'){
             ele.src = 'img/ico/italy.ico';
         }
         ele.innerHTML = present[element];
 
-        if(present[element] > last[element]){
-            calc = present[element] - last[element];
-            eleLast.classList.add('txt-red');
-            message = '+ ' + calc + ' in più rispetto a ' + daysAgo + ' giorno fa';
-        }else if(present[element] < last[element]){
-            calc = last[element] - present[element];
-            eleLast.classList.add('txt-green');
-            message = '- ' + calc + ' in meno rispetto a ' + daysAgo + ' giorno fa';
-        }
-        eleLast.innerHTML = message;
+        let eleLast = document.querySelector('#' + element + '_last');
+        if(eleLast){
+        
+            if(present[element] > last[element]){
+                calc = present[element] - last[element];
+                element !== 'dimessi_guariti' ? eleLast.classList.add('txt-red') : eleLast.classList.add('txt-green');
+                message = '+ ' + calc + ' in più rispetto a ' + daysAgo + ' giorno fa';
+            }else if(present[element] < last[element]){
+                calc = last[element] - present[element];
+                eleLast.classList.add('txt-green');
+                message = '- ' + calc + ' in meno rispetto a ' + daysAgo + ' giorno fa';
+            }
+            eleLast.innerHTML = message;
+        }    
     }
 }
