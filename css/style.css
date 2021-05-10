@@ -46,6 +46,16 @@
     color: #b3b4ba;
     font-weight: 400;
     margin-right: 10px;
+    vertical-align: middle;
+}
+
+.update-date strong{
+    vertical-align: middle;
+}
+
+.update-date__ico-state{
+    vertical-align: middle;
+    margin-left: 10px;
 }
 
 .content-report{

@@ -56,9 +56,10 @@
     <main>
         <div class="container">
             <!-- data aggiornamento statistiche -->
-            <section class="update-date">
-                <span class="update-date__sub-title">Ultimo aggiornamento:</span><strong id='data'></strong>
-            </section>
+            <div class="update-date">
+               <span class="update-date__sub-title">Ultimo aggiornamento:</span><strong id='data'></strong>
+               <img id="stato" class="update-date__ico-state" alt="stato covid">
+            </div>
             <!-- fine data aggiornamento statistiche -->
 
             <!-- report dati covid -->
@@ -74,6 +75,7 @@
                                     <h5>Totale Positivi</h5>
                                     <h2 id="totale_positivi"></h2>
                                 </div>
+                                <span class="last-message" id="totale_positivi_last"></span>
                             </div>
                         </div>
                         <div class="content-report__card">
@@ -85,6 +87,7 @@
                                     <h5>Ricoverati con sintomi</h5>
                                     <h2 id="ricoverati_con_sintomi"></h2>
                                 </div>
+                                <span class="last-message" id="ricoverati_con_sintomi_last"></span>
                             </div>
                         </div><div class="content-report__card">
                             <div class="content-report__widget">
@@ -95,16 +98,18 @@
                                     <h5>Guariti</h5>
                                     <h2 id="dimessi_guariti"></h2>
                                 </div>
+                                <span class="last-message" id="dimessi_guariti_last"></span>
                             </div>
                         </div><div class="content-report__card">
                             <div class="content-report__widget">
                                 <div class="content-report__icon-gradient yellow-grad">
-                                    <i class="ico-report fas fa-bell"></i>
+                                    <i class="ico-report fas fa-skull-crossbones"></i>
                                 </div>
                                 <div class="content-report__value">
-                                    <h5>Total Cases</h5>
-                                    <h2>157,639,653</h2>
+                                    <h5>Deceduti</h5>
+                                    <h2 id="deceduti"></h2>
                                 </div>
+                                <span class="last-message" id="deceduti_last"></span>
                             </div>
                         </div>
                     </div>
@@ -115,20 +120,22 @@
                                     <i class="ico-report fas fa-bed"></i>
                                 </div>
                                 <div class="content-report__value">
-                                    <h5>Total Cases</h5>
-                                    <h2>157,639,653</h2>
+                                    <h5>Nuovi positivi</h5>
+                                    <h2 id="nuovi_positivi"></h2>
                                 </div>
+                                <span class="last-message" id="nuovi_positivi_last"></span>
                             </div>
                         </div>
                         <div class="content-report__card">
                             <div class="content-report__widget">
                                 <div class="content-report__icon-gradient orange-grad">
-                                    <i class="ico-report fas fa-procedures"></i>
+                                    <i class="ico-report fas fa-house-user"></i>
                                 </div>
                                 <div class="content-report__value">
-                                    <h5>Total Cases</h5>
-                                    <h2>157,639,653</h2>
+                                    <h5>Isolamento domiciliare</h5>
+                                    <h2 id="isolamento_domiciliare"></h2>
                                 </div>
+                                <span class="last-message" id="isolamento_domiciliare_last"></span>
                             </div>
                         </div><div class="content-report__card">
                             <div class="content-report__widget">
@@ -136,9 +143,10 @@
                                     <i class="ico-report fas fa-medkit"></i>
                                 </div>
                                 <div class="content-report__value">
-                                    <h5>Total Cases</h5>
-                                    <h2>157,639,653</h2>
+                                    <h5>Tamponi</h5>
+                                    <h2 id="tamponi"></h2>
                                 </div>
+                                <span class="last-message" id="tamponi_last"></span>
                             </div>
                         </div><div class="content-report__card">
                             <div class="content-report__widget">
@@ -146,9 +154,10 @@
                                     <i class="ico-report fas fa-bell"></i>
                                 </div>
                                 <div class="content-report__value">
-                                    <h5>Total Cases</h5>
-                                    <h2>157,639,653</h2>
+                                    <h5>Positivi tpn. molecolare</h5>
+                                    <h2 id="totale_positivi_test_molecolare"></h2>
                                 </div>
+                                <span class="last-message" id="totale_positivi_test_molecolare_last"></span>
                             </div>
                         </div>
                     </div>

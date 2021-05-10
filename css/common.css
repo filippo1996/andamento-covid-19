@@ -90,3 +90,17 @@ strong{
 .viol-grad{
     background: linear-gradient(135deg, #9a56ff 0%, #e36cd9 100%);
 }
+
+.last-message{
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.txt-green{
+    color: green;
+}
+
+.txt-red{
+    color: red;
+}
